@@ -17,7 +17,15 @@ namespace APBD_cw7.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Entity<Doctor>().HasData(
+                new Doctor
+                {
+                    IdDoctor = 1,
+                    FirstName = "Ferdek",
+                    LastName = "Kiepski",
+                    email = "FerdekKiepski@gmail.com"
+                }
+            );
         }
 
     }

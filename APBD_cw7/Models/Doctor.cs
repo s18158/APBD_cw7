@@ -22,5 +22,8 @@ namespace APBD_cw7.Models
         [MaxLength(100)]
         [EmailAddress]
         public string email { get; set; }
+
+        public List<Prescription> prescriptions { get; set; }
     }
 }
+ 
